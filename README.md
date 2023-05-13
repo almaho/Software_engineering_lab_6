@@ -1,7 +1,7 @@
-<h1>Software engineering lab 6 <\h1>
-<h2>Mohadese Ghafari 98109537 - Mehreagan Mohseni 97107245<\h2>
+<h1>Software engineering lab 6 </h1>
+<h2>Mohadese Ghafari 98109537 - Mehreagan Mohseni 97107245</h2>
 
-<h3>Abstract Factor Design Pattern, Implementation Steps<\h3>
+<h3>Abstract Factor Design Pattern, Implementation Steps</h3>
 
 1- Map out a matrix of distinct product types versus variants of these products.
 
@@ -15,7 +15,7 @@
 
 6-Scan through the code and find all direct calls to product constructors. Replace them with calls to the appropriate creation method on the factory object.
 
-<h3>Prototype Design Pattern, Implementation Steps<\h3>
+<h3>Prototype Design Pattern, Implementation Steps</h3>
 1- Create the prototype interface and declare the clone method in it. Or just add the method to all classes of an existing class hierarchy, if you have one.
 
 2- A prototype class must define the alternative constructor that accepts an object of that class as an argument. The constructor must copy the values of all fields defined in the class from the passed object into the newly created instance. If you’re changing a subclass, you must call the parent constructor to let the superclass handle the cloning of its private fields.
@@ -26,7 +26,7 @@
 
 5- Optionally, create a centralized prototype registry to store a catalog of frequently used prototypes.
 
-<h3>Unit Test<\h3>
+<h3>Unit Test</h3>
 test_shallow_copy: This test verifies the behavior of a shallow copy. It creates an instance of SomeComponent with various attributes, including a circular reference to a SelfReferencingEntity object. It then performs a shallow copy of the component using copy.copy(component). The test checks the following:
 
 The shallow copied object is not the same object as the original object using self.assertIsNot(component, shallow_copied_component).
@@ -42,7 +42,7 @@ test_circular_reference: This test verifies that the circular reference is maint
 The circular reference in the deep copied object points to itself and its parent correctly, demonstrating that the circular reference is maintained.
 The circular reference in the deep copied object is not the same as the original object's circular reference.
 
-<h3>Builder Design Pattern, Implementation Steps<\h3>
+<h3>Builder Design Pattern, Implementation Steps</h3>
 
 1- Create a concrete builder class for each of the product representations and implement their construction steps.
 
@@ -54,7 +54,7 @@ The circular reference in the deep copied object is not the same as the original
 
 5- The construction result can be obtained directly from the director only if all products follow the same interface.
 
-<h3>Unit test<\h3>
+<h3>Unit test</h3>
 test_build_minimal_viable_product: This test verifies that the director can build a minimal viable product using the builder. It checks if the product contains the expected parts after the construction.
 
 test_build_full_featured_product: This test verifies that the director can build a full-featured product using the builder. It checks if the product contains the expected parts after the construction.
