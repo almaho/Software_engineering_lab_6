@@ -61,6 +61,41 @@ test_build_full_featured_product: This test verifies that the director can build
 
 test_custom_product: This test verifies that the builder can be used directly without the director to create a custom product. It checks if the product contains the expected parts after the construction.
 
+<h3> Questions </h3>
+1.
+Structural Patterns: These patterns are used for organizing and composing data and classes at the system level. Some of the well-known structural patterns include Adapter and Composite.
+
+Behavioral Patterns: These patterns focus on the behavior and interaction between objects. They provide methods for managing flow and distributing tasks among objects. Some recognized behavioral patterns include Observer and Strategy.
+
+Creational Patterns: These patterns focus on object creation methods and provide various approaches for creating the desired object. Some creational patterns include Singleton and Factory Method.
+
+2.
+They are all creational design pattern.
+Abstract Factory is a creational design pattern that lets you produce families of related objects without specifying their concrete classes.
+Prototype is a creational design pattern that lets you copy existing objects without making your code dependent on their classes.
+Builder is a creational design pattern that lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.
+
+3.
+The five SOLID principles are a set of guidelines that help programmers create maintainable and scalable software designs. These principles are:
+
+1. Single Responsibility Principle (SRP)
+2. Open-Closed Principle (OCP)
+3. Liskov Substitution Principle (LSP)
+4. Interface Segregation Principle (ISP)
+5. Dependency Inversion Principle (DIP)
+
+On the other hand, the GoF design patterns are specific solutions to common design problems in software engineering. Some well-known design patterns in GoF include Adapter, Composite, Observer, and Strategy.
+
+Although both SOLID principles and GoF design patterns focus on creating maintainable and scalable software designs, there are differences between them. The SOLID principles are meant to be guidelines for designing and evaluating software designs, while GoF design patterns focus on specific ways to solve common design problems using patterns. In general, SOLID principles are used as principles for designing and evaluating programming designs, while GoF design patterns are used to solve specific design problems.
+
+
+4.
+The Singleton design pattern restricts the creation of only one instance of a class throughout the program. This pattern ensures that all components of the program can access the Singleton instance and eliminates the need for creating multiple instances.
+
+While the Singleton pattern does not violate the Single Responsibility Principle (SRP), it can be argued that it violates the Open-Closed Principle (OCP) in certain cases. When using the Singleton pattern and having the program depend on a single instance, any changes to that instance can have ripple effects throughout the entire program. This may require modifying code directly related to the Singleton, making it harder to maintain an open-closed design.
+
+Therefore, while the Singleton pattern can be useful in certain scenarios, it should be used with caution to maintain SOLID principles and be aware of the potential impacts on other parts of the program.
+
 
 
 
