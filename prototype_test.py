@@ -1,5 +1,5 @@
 import unittest
-from your_module import *
+from prototype import *
 
 
 class SomeComponentTest(unittest.TestCase):
